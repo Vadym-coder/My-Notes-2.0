@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>📝My Notes</h1>
+    <button id="toggleDark" class="theme-toggle">🌕</button>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <select class="select" id="inputnot2">
+        <option value="">Select category</option>
+        <option value="urgent">Urgent</option>
+        <option value="not-urgent">Not Urgent</option>
+        <option value="homework">Homework</option>
+        <option value="job">Job</option>
+        <option value="personal">Personal</option>
+        <option value="shopping">Shopping</option>
+        <option value="appointment">Appointment</option>
+        <option value="others">Others</option>
+      </select>
+      <input class="input" id="inputnot1" placeholder="Note text" />
+      <button id="add" class="btn-add">Add</button>
+    </section>
+
+    <ul id="notlist" class="notes-list"></ul>
+    <p id="emptyMsg" class="empty-msg" style="display:none;">Nothing for today!</p>
+  </main>
+  <footer>
+    &copy; 2025 Notes App®
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
